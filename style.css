@@ -1,0 +1,187 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Outer black background */
+body {
+  margin: 0;
+  padding: 0;
+  background: black; /* black background outside */
+  display: flex;
+  justify-content: center;
+}
+
+.outer {
+  width: 80%;          /* full width like the screenshot */
+  max-width: 800px;    /* keeps content straight and centered */
+  background: white;    /* page color */
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;    /* take full screen height */
+}
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #1f2937;
+  color: white;
+}
+
+header nav a {
+  margin-left: 20px;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Hero section */
+.hero {
+  flex: 1.2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background: #1f2937;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  margin-bottom: 15px;
+}
+
+.hero-text button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-img {
+  background: #6b7280;
+  width: 280px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+}
+
+/* Info section */
+.info {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.info h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.info-card {
+  width: 120px;
+}
+
+.box {
+  border: 2px solid #3b82f6;
+  border-radius: 8px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+/* Quote section */
+.quote {
+  background: #e5e7eb;
+  padding: 30px 50px;
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+  flex: 1;
+}
+
+.quote .author {
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: right;
+}
+
+/* CTA section */
+.cta {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.cta-box {
+  background: #3b82f6;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+}
+
+.cta-box h3 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.cta-box p {
+  font-size: 0.85rem;
+  color: #dbeafe;
+}
+
+.cta-box button {
+  background: white;
+  color: #3b82f6;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #1f2937;
+  text-align: center;
+  color: white;
+  padding: 12px;
+  font-size: 0.8rem;
+}
